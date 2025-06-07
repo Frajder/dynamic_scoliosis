@@ -1,0 +1,60 @@
+{
+  "credential_type": "patient_record",
+  "issuer": {
+    "did": "did:web:hospital.example",
+    "name": "Example Hospital System",
+    "verification_method": "did:web:hospital.example#key-1",
+    "context_url": "https://example.com/credentials/ds-practitioner"
+  },
+  "subject": {
+    "did": null,
+    "name": "Example Patient",
+    "email": null,
+    "phone": null,
+    "organization": null
+  },
+  "practitioner": null,
+  "patient_record": {
+    "patient_id": "P123456",
+    "blood_type": "O+",
+    "emergency_contacts": [
+      {
+        "name": "Emergency Contact",
+        "relationship": "Spouse",
+        "phone": "+1-555-0123",
+        "email": "emergency@example.com"
+      }
+    ],
+    "medical_alerts": [
+      {
+        "condition": "Dynamic Scoliosis",
+        "severity": "medium",
+        "treatment": "Physical therapy recommended",
+        "medications": [],
+        "allergies": []
+      }
+    ],
+    "current_medications": [],
+    "allergies": [
+      "Penicillin"
+    ],
+    "medical_devices": [],
+    "primary_physician": null,
+    "scoliosis_type": "dynamic",
+    "curve_degree": 25.5,
+    "last_updated": "2025-06-07 07:12:16.911990+00:00"
+  },
+  "proof": {
+    "type": "Ed25519Signature2020",
+    "purpose": "assertionMethod",
+    "use_demo_signature": true
+  },
+  "qr_config": {
+    "use_compression": true,
+    "error_correction": "Q",
+    "box_size": 10,
+    "border": 4
+  },
+  "custom_context": {},
+  "expiry_date": null
+}

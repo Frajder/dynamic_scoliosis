@@ -1,0 +1,41 @@
+{
+  "credential_type": "practitioner",
+  "issuer": {
+    "did": "did:web:kim-clinic.example",
+    "name": "Dr. Kim's Dynamic Scoliosis Training Center",
+    "verification_method": "did:web:kim-clinic.example#key-1",
+    "context_url": "https://example.com/credentials/ds-practitioner"
+  },
+  "subject": {
+    "did": null,
+    "name": "Example Practitioner",
+    "email": "practitioner@example.com",
+    "phone": null,
+    "organization": "Example Medical Center"
+  },
+  "practitioner": {
+    "level": "Level 1",
+    "completion_date": null,
+    "expiry_date": null,
+    "training_hours": 40,
+    "specializations": [
+      "Dynamic Scoliosis Assessment",
+      "Treatment Planning"
+    ],
+    "description": "Completed foundational training in Dynamic Scoliosis assessment & management."
+  },
+  "patient_record": null,
+  "proof": {
+    "type": "Ed25519Signature2020",
+    "purpose": "assertionMethod",
+    "use_demo_signature": true
+  },
+  "qr_config": {
+    "use_compression": true,
+    "error_correction": "Q",
+    "box_size": 10,
+    "border": 4
+  },
+  "custom_context": {},
+  "expiry_date": null
+}
